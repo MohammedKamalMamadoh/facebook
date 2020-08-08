@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="12884" started-at="2020-08-05T02:39:03 AST" finished-at="2020-08-05T02:39:16 AST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.DashBoardTest@2a556333]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="12884" started-at="2020-08-05T02:39:03 AST" finished-at="2020-08-05T02:39:16 AST">
+      <class name="tests.DashBoardTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.DashBoardTest@2a556333]" name="setUpClass" is-config="true" duration-ms="233" started-at="2020-08-05T02:39:03 AST" finished-at="2020-08-05T02:39:04 AST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="StartDriver()[pri:0, instance:tests.DashBoardTest@2a556333]" name="StartDriver" is-config="true" duration-ms="9764" started-at="2020-08-05T02:39:04 AST" finished-at="2020-08-05T02:39:13 AST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartDriver -->
+        <test-method status="FAIL" signature="UserRegisteration()[pri:0, instance:tests.DashBoardTest@2a556333]" name="UserRegisteration" duration-ms="1558" started-at="2020-08-05T02:39:13 AST" finished-at="2020-08-05T02:39:15 AST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect [https://web.facebook.com/?_rdc=1&_rdr] but found [https://web.facebook.com/?_rdc=1&_rdr]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect [https://web.facebook.com/?_rdc=1&_rdr] but found [https://web.facebook.com/?_rdc=1&_rdr]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertNotEquals(Assert.java:1404)
+at org.testng.Assert.assertNotEquals(Assert.java:1409)
+at tests.DashBoardTest.UserRegisteration(DashBoardTest.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserRegisteration -->
+        <test-method status="PASS" signature="CloseDriver(org.testng.ITestResult)[pri:0, instance:tests.DashBoardTest@2a556333]" name="CloseDriver" is-config="true" duration-ms="1247" started-at="2020-08-05T02:39:15 AST" finished-at="2020-08-05T02:39:16 AST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserRegisteration status=FAILURE method=DashBoardTest.UserRegisteration()[pri:0, instance:tests.DashBoardTest@2a556333] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.DashBoardTest@2a556333]" name="tearDownClass" is-config="true" duration-ms="37" started-at="2020-08-05T02:39:16 AST" finished-at="2020-08-05T02:39:16 AST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.DashBoardTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
